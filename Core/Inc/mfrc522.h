@@ -10,6 +10,15 @@
 
 #include "stm32f1xx.h"
 
+/* MFRC522 Commands */
+#define PCD_IDLE						0x00   //NO action; Cancel the current command
+#define PCD_AUTHENT						0x0E   //Authentication Key
+#define PCD_RECEIVE						0x08   //Receive Data
+#define PCD_TRANSMIT					0x04   //Transmit data
+#define PCD_TRANSCEIVE					0x0C   //Transmit and receive data,
+#define PCD_RESETPHASE					0x0F   //Reset
+#define PCD_CALCCRC						0x03   //CRC Calculate
+
 /* MFRC522 Registers */
 //Page 0: Command and Status
 #define MFRC522_REG_RESERVED00			0x00
