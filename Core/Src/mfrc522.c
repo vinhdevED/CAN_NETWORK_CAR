@@ -17,6 +17,9 @@ void TM_MFRC522_Init(void){
 	TM_MFRC522_WriteRegister(MFRC522_REG_T_RELOAD_H, 0);
 }
 
+/*This function performs a reset procedure for the MFRC522 module
+ *
+ */
 void TM_MFRC522_Reset(void) {
 	TM_MFRC522_WriteRegister(MFRC522_REG_COMMAND, PCD_RESETPHASE);
 }
